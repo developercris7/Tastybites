@@ -1,38 +1,353 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Outfit:wght@300&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* header cart start*/
+.logo{
+    width: 250px;
+    height: 50px;
+    /* width: 210px; */
+    margin-top: 15px;
+    /* background-color: red; */
+    padding: 0;
+    position: relative;
+    margin-left:-20px;
+}
+.link{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(107, 106, 106);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+.link:hover{
+    font-size: 16px;
+    color:#ff7400;
+    /* transition: .5s; */
+}
+.cart {
+    max-width: 400px;
+    width: 90%;
+    height: 450px;
+    top: 55px;
+    right: 25px;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    background-color: #ff7400;
+    box-shadow: -1px 2px 6px 0px rgba(105,103,103,0.75);
+    -webkit-box-shadow: -1px 2px 6px 0px rgba(105,103,103,0.75);
+    -moz-box-shadow: -1px 2px 6px 0px rgba(105,103,103,0.75);
+    color: white;
+    font-weight: bold;
+    z-index: 10;
+}
+.cart-body{
+    /* background-color: blueviolet; */
+    color: black;
+    padding: 2px;
+    height: 340px;
+    overflow-y: auto;
+    scrollbar-width: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cart-body::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+}
+.cart-img{
+    width: 70px;
+    /* width: 100%; */
+}
+.bag-icon{
+    position: relative;
+
+}
+.notify{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: -5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* header cart ends */
+/* Main starts */
+
+.steps-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(194, 194, 194);
+    padding: 10px 0px;
+    border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.step-wrapper {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: red; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box {
+    width: 220px;
+    height: 230px;
+    background-color: aliceblue;
+    margin: 10px auto;
+    border-radius: 10px;
+    transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.img {
+    width: 70px;
+    height: 70px;
+
+}
+
+.box:hover {
+    margin: 0px auto;
+}
+
+/* Main ends */
+
+/* Menu Starts */
+.menu-header {
+    min-height: 50px;
+    margin: 15px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+    gap: 10px;
+}
+
+.tabOptions {
+    width: 250px;
+    padding-bottom: 10px;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
+.active-tab {
+    color: #ff7400;
+    border-bottom: 2px solid #ff7400;
+}
+
+.img-box {
+    width: 45px;
+    height: 45px;
+    margin: 0px 10px;
+}
+
+.menu-container {
+    margin-top: 10px;
+    min-height: 500px;
+    /* background-color: blueviolet; */
+    /* background-color: grey; */
+}
+.cart-btn{
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    padding: 2px 10px;
+    height: 30px;
+    margin:auto 10px;
+    font-weight: bold;
+    background-color: #ff7400;
+     color: rgb(233, 227, 227);
+    /* border: 2px solid #ff7400;
+    color: #ff7400; */
+}
+.food {
+    width: 20%;
+    height: 210px;
+    /* background-color: crimson; */
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+    /* border: 1px solid black; */
+    box-shadow: -1px 2px 6px 0px rgba(105,103,103,0.75);
+    -webkit-box-shadow: -1px 2px 6px 0px rgba(105,103,103,0.75);
+    -moz-box-shadow: -1px 2px 6px 0px rgba(105,103,103,0.75);
+      overflow: hidden;
+    border-radius: 10px;
+    margin: 10px 2%;
+    padding: 5px;
+    font-weight:600;
+}
+.food-img{
+    width: 100%;
+    height: 135px;
+    background-color: white;
+    border-radius: 10px;
+    /* margin: 2px; */
+}
+.food-wrapper {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: red; */
+    margin: 10px auto;
+}
+.food-name{
+    font-size: 20px;
+    /* font-weight: bold; */
+}
+/* Menu Ends */
+
+/* About starts */
+.about-container {
+    min-height: 500px;
+    /* background-color: red; */
+    margin: 10px 0px;
+}
+
+.about-us {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0px auto;
+    /* background-color: green; */
+}
+
+/* About Ends */
+
+/* Footer Starts */
+.footer-container {
+    min-height: 200px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-wrapper {
+    width: 100%;
+    min-height: 150px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footers {
+    width: 22%;
+    min-height: 10px;
+    margin: 0px 1.5%;
+}
+
+.footers>p {
+    margin: 5px 0px;
+}
+.c-img{
+    width:45px;
+    height:45px;
+    margin-right: 10px;
+}
+
+/* Footer Ends */
+/* Media for Small Device */
+
+@media(width<=767px) {
+    .logo{
+        width: 240px;
+    }
+    .food {
+        width: 45%;
+        height: 155px;
+        font-size: 12px;
+    }
+    .food-img{
+        width: 100%;
+        height: 100px;
+        background-color: white;
+        border-radius: 10px;
+        /* margin: 2px; */
+    }
+    .food-name{
+        font-size: 16px;
+    }
+    .cart-btn{
+        margin: auto 3px;
+        height: 20px;
+       font-size: 12px;
+    }
+    .box {
+        width: 90%;
+        height: 200px;
+    }
+
+    .footers {
+        width: 100%;
+    }
+
+    .menu-header {
+        justify-content: space-evenly;
+    }
+
+    .tabOptions {
+        font-size: 18px;
+        width: 31%;
+    }
+
+    .img-box {
+        width: 30px;
+        height: 30px;
+        margin: 0px 5px;
+    }
+    .cart{
+        height: 440px;
+        /* height:70vh; */
+        font-size: 20px;
+    }
+    
+}
+
+/* Media for Medium and large */
+@media(768px<=width<=1133px) {
+    .logo{
+        width: 230px;
+    }
+    .food {
+        width: 23%;
+        margin: 10px 1%;
+        font-size: 14px;
+    }
+    .food-name{
+        font-size: 18px;
+    }
+   .cart-btn{
+    margin: auto 0px;
+   }
+    .tabOptions {
+        width: 175px;
+        font-size: 20px;
+    }
+
+    .img-box {
+        width: 40px;
+        height: 40px;
+        margin: 0px 2px;
+    }
+
+    .footers {
+        width: 45%;
+        margin: 0px 2.5%;
+    }
 }
