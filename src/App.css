@@ -316,7 +316,11 @@
         /* height:70vh; */
         font-size: 20px;
     }
-    
+.cart-item {
+    height: 60px;
+    font-size: 15px;
+
+}
 }
 
 /* Media for Medium and large */

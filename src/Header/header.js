@@ -84,7 +84,7 @@ const Header = ({ cartDisplay, setCartDisplay, cartFood, handleDeleteCart, notif
 
                         {(cartFood.length) ? (
                             cartFood.map((cartItem) => (
-                                <div className="cart-item bg-white w-100 py-2 d-flex justify-content-between px-2 align-items-center mt-2 rounded">
+                                <div className="cart-item bg-white w-100 py-2 d-flex justify-content-between px-2 align-items-center mt-2 rounded " key = {cartItem.id}>
                                     <div className="food-details d-flex">
                                         <img src={cartItem.coverImage} alt="" className='img-fluid cart-img rounded' />
                                         <div className='ms-3'>
@@ -93,7 +93,7 @@ const Header = ({ cartDisplay, setCartDisplay, cartFood, handleDeleteCart, notif
                                         </div>
                                     </div>
                                     <div className='d-flex align-items-center flex-wrap'>
-                                        <i class="fa-solid fa-trash-can  fs-5                                 mx-2 " role="button" onClick={() => handleDeleteCart(cartItem.id)} ></i>
+                                        <i className="fa-solid fa-trash-can  fs-5                                 mx-2 " role="button" onClick={() => handleDeleteCart(cartItem.id)} ></i>
                                     </div>
                                 </div>
                             ))
@@ -127,7 +127,7 @@ const Header = ({ cartDisplay, setCartDisplay, cartFood, handleDeleteCart, notif
                     </button>
 
                     <button className="btn d-md-none " onClick={handleShow}>
-                        <i class="fa fa-bars fs-3" aria-hidden="true"></i>
+                        <i className="fa fa-bars fs-3" aria-hidden="true"></i>
                     </button>
                 </div>
 

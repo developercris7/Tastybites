@@ -28,7 +28,7 @@ const Main = () => {
                         smooth={true}
                         offset={-60} duration={100} >
                         Order Now
-                    </Link> <i class="fa fa-caret-down ms-1 fs-6" aria-hidden="true"></i></button>
+                    </Link> <i className="fa fa-caret-down ms-1 fs-6" aria-hidden="true"></i></button>
                         <button className='btn text-white ms-md-5 ms-4 d-flex align-items-center'
                         style = {{backgroundColor:"	#ff7400"}}><Link
                         className='nav-link mx-1'
@@ -37,12 +37,12 @@ const Main = () => {
                         smooth={true}
                         offset={-60} duration={100} >
                         See Foods
-                    </Link> <i class="fa fa-caret-down ms-1 fs-6" aria-hidden="true"></i></button>
+                    </Link> <i className="fa fa-caret-down ms-1 fs-6" aria-hidden="true"></i></button>
                     </div>
 
                     <div className="d-flex flex-wrap mt-4">
-                        <span className='fs-5 me-3'><i class="fa fa-check me-2" aria-hidden="true" style = {{color:"	#ff7400"}}></i>Free Delivery</span>
-                        <span className='fs-5 '><i class="fa fa-check me-2" aria-hidden="true" style = {{color:"	#ff7400"}}></i>100% Secure</span>
+                        <span className='fs-5 me-3'><i className="fa fa-check me-2" aria-hidden="true" style = {{color:"	#ff7400"}}></i>Free Delivery</span>
+                        <span className='fs-5 '><i className="fa fa-check me-2" aria-hidden="true" style = {{color:"	#ff7400"}}></i>100% Secure</span>
                     </div>
 
                 </div>
@@ -72,7 +72,7 @@ const Main = () => {
                         </div>
                         <div className="col-md-4 "    data-aos="fade-up"
                         data-aos-duration="1000"
-                        data-aos-delay="400">
+                        data-aos-delay="100">
                             <div className="box">
                                 <div className="img">
                                     <img src={img2} alt="browseImage" className='img-fluid' />
@@ -84,7 +84,7 @@ const Main = () => {
                         <div className="col-md-4 "
                         data-aos="fade-up"
                         data-aos-duration="1000"
-                        data-aos-delay="800"
+                        data-aos-delay="200"
                         >
                             <div className="box">
                                 <div className="img">

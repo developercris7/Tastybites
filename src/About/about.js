@@ -21,7 +21,10 @@ const About = () => {
           <div className="row w-100">
             <div className="col-md-4 "
             data-aos="fade-up"
-            data-aos-duration="1000">
+            data-aos-duration="1000" 
+            
+            >
+
               <div className="box">
                 <div className="img">
                   <img src={img1} alt="browseImage" className='img-fluid' />
@@ -34,7 +37,7 @@ const About = () => {
             <div className="col-md-4 "
             data-aos="fade-up"
             data-aos-duration="1000"
-            data-aos-delay="400"
+        
             >
               <div className="box">
                 <div className="img">
@@ -48,7 +51,6 @@ const About = () => {
             <div className="col-md-4 "
                data-aos="fade-up"
                data-aos-duration="1000"
-               data-aos-delay="800"
             >
               <div className="box">
                 <div className="img">
